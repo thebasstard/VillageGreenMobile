@@ -1,0 +1,56 @@
+#headerpage1{
+	background-color: #857e77;
+	color: #E8E8E8;
+	font-family: lane;
+}
+
+#headerpage2{
+	background-color: #857e77;
+	color: #E8E8E8;
+	font-family: lane;
+}
+
+
+#footerpage1{
+	background-color: #857e77;
+	color: #E8E8E8;
+	font-family: lane;
+}
+
+#footerpage2{
+	background-color: #857e77;
+	color: #E8E8E8;
+	font-family: lane;
+}
+
+#popup{
+	background-color: #857e77;
+}
+
+#textsite{
+	color: #E8E8E8 ;
+}
+
+#logo{
+	width: 30px;
+	margin-bottom: 10px;
+}
+
+
+.ui-page{
+	background: transparent;
+}
+
+.ui-mobile-viewport{
+    background: url("images/Fond.png") no-repeat;
+    background-size: 100% 100% !important;
+}
+
+#boutonrecherche{
+	background-color: #f0eee8;
+}
+
+#boutonvalide{
+	background-color: #f0eee8;
+}
+

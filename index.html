@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta name="viewport" content="width = device-width, initial-scale=1"> 
+		<meta charset="utf-8">
+		<title></title>
+		
+		<link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+		<link rel="stylesheet" href="mobile.css">
+	</head>
+	<body>
+
+	<!---------------------------page 1-->
+	<div data-role="page" id="page1">
+
+			<!------------------------fenêtre popover de la page 1-->
+            <div data-role="popup" id="popup" data-overlay-theme="a" data-theme="c" data-dismissible="false" style="max-width:300px;" class="ui-corner-all" data-history="false">
+                <div data-role="header" class="ui-header ui-bar-c">
+                    <h1>Bienvenue !</h1>
+                </div>
+                <div data-role="content" data-theme="d" class="ui-corner-bottom ui-content">
+                    <p id="textsite">Vous êtes actuellement sur le site mobile de Village Green.
+                        <br/>
+                        <br/>Pour vous rendre sur le site internet, cliquez sur le bouton ci-dessous</p>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a" style="width: 85%"><a href="http://dl.bienvu.net/ludod/VillageGreenWeb1/" data-role="button" data-theme="c" data-icon="home" target="_blank">La boutique</a>
+                        </div>
+                        <div class="ui-block-b" style="width: 15%; margin-top:9px"><a href="#" data-role="button" data-icon="delete" data-iconpos="notext" data-rel="back">Fermer</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------------- fin de la fenêtre popover-->
+
+           <!------------------------  header de la page 1-->
+            <div data-role="header" data-position="fixed" id="headerpage1"> <a href="#about" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-transition="flip" data-icon="shop" data-theme="b">VG Mobile</a>           	
+                
+                    <div id="catalogue"  align="center" >
+                        <h1><strong>Catalogue</strong></h1>
+                    </div>                       
+                    <div  align="center">
+                        <img id="logo" src="images/Logo.png"/>
+                    </div>
+                
+            </div>
+            <div data-role="content">
+
+            <!----------------------  input de recherche -->
+				<input type="text" id="textbox1" name="text" placeholder="Quel produit cherchez vous ?">
+
+			<!-- ----------------------  bouton recherche -->				
+				<input type="button" id="boutonrecherche" class="ui-btn" value="Rechercher" data-icon="search">			
+			</div>
+            
+            <!------------------ contenu de la page 1-->
+            <div class=" col-xs-12 " id="panel">
+                <div class="panel panel-success" id="produits">
+                    <div class="panel-body">
+                        <p><h2 id="marque" class="text-center">Produits</h2></p>
+                    </div>
+                </div>
+            </div>
+
+            <div data-role="content">
+				<div data-iscroll>
+					<ul data-role="listview" id="liste">				
+					</ul>
+				</div>
+				<div data-iscroll>
+					<ul data-role="listview" id="liste2">				
+					</ul>
+				</div>			
+			</div>
+            <!-- bouton d'envoi vers la page 2 -->
+            <!-- <div  data-role="content">
+        		<a href="#page2" id="boutonvalide" data-role="button" data-icon="check">Valider</a>
+    		</div>  -->
+
+            <!------------------------ footer page 1-->
+           	<div data-role="footer" data-position="fixed" id="footerpage1">
+                 <div id="villagegreen" align="center"><h1><strong>Village Green</strong></h1></div>
+            </div>
+
+    </div>
+    <!---------------------- fin de la page 1-->
+
+    <!-- ------------------------début page 2-->
+    <div data-role="page" id="page2">
+	    <div  data-role="header" data-rel="back"><h1>Header Page 2</h1></div>
+	    
+	    <div  data-role="content">
+	        <p>This is page2</p>
+	    </div>
+	    
+	    <div  data-role="footer"><h4>Footer</h4></div>
+	</div> 
+	<!-----------------fin de la page 2-->
+        
+	</body>
+</html>
+
+
+<script src="jquery.js"></script>
+<script src="jquery.mobile-1.4.5.js"></script>
+
+<script src="script.js"></script>
